@@ -1,0 +1,32 @@
+{
+	"development2": {
+		"key": "480970"
+	, "secret": "fbcdffca25976ad4516e767466ad39f6"
+	, "hostname": "xtao.aliapp.com"
+	, "sdkUrl": "../../../../jssdk/trunk/demo/sdk.js"
+	, "channelUrl": "/jssdk/trunk/demo/channel.html"
+	}
+, "development": {
+		"key": "470834"
+	, "secret": "35023170595308229031d16c1e8b59eb"
+	, "hostname": "www.mashupshow.com"
+	, "sdkUrl": "../../../../jssdk/trunk/demo/sdk.js"
+	, "channelUrl": "/jssdk/trunk/demo/channel.html"
+	}
+
+, "production": {
+		"key": "12008678"
+	, "secret": "8005a1c8effc6eee1c3355ea8201bf65"
+	, "hostname": "xtao.aliapp.com"
+	, "sdkUrl": "../../../../jssdk/trunk/build/sdk.js"
+	, "channelUrl": "/jssdk/trunk/build/channel.html"
+	}
+
+, "publication": {
+		"key": "12008678"
+	, "secret": "8005a1c8effc6eee1c3355ea8201bf65"
+	, "hostname": "xtao.aliapp.com"
+	, "sdkUrl": "http://a.tbcdn.cn/apps/top/x/sdk.js"
+	, "channelUrl": "/channel.html"
+	}
+}

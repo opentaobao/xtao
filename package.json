@@ -1,0 +1,22 @@
+{
+  "author": "goddyzhao <goddy128@gmail.com> (http://goddyzhao.me)",
+  "name": "xtao",
+  "description": "Widget demo builder for top jssdk",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/opentaobao/xtao.git"
+  },
+  "dependencies": {
+    "commander": "0.6.0"
+  , "mkdirp": "0.3.1"
+  , "dot": "0.2.1"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "main": "./lib/xtao",
+  "bin": {"xtao": "./bin/xtao"},
+  "engines": {
+    "node": ">= 0.6.x < 0.7.0"
+  }
+}
