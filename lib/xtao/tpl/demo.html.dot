@@ -5,7 +5,7 @@
 		<title>{{=it.title}}</title>
 		<link rel="stylesheet" type="text/css" href="http://a.tbcdn.cn/apps/top/g/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="http://localhost/top-assets/g/css/prettify.min.css">
-		<link rel="stylesheet" type="text/css" href="http://a.tbcdn.cn/apps/top/g/css/racoon-min.css">
+		<link rel="stylesheet" type="text/css" href="http://localhost/top-assets/g/css/racoon.css">
 		<style type="text/css">
 			{{=it.css}}
 		</style>
