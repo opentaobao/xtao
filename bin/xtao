@@ -1,0 +1,37 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies
+ */
+var program = require('commander')
+	, xtao = require('../');
+
+program.command('create')
+	.description('-> Create a widget based on top sdk')
+	.option('-v, --version [version]', 'specify the version(default: 1.0)')
+	.action(function(){
+		var options = arguments[arguments.length-1]
+			, path = program.args.shift()
+			, version = options.version;
+		
+		path = 'string' === typeof path ? path : '.';
+		version = 'string' ===  typeof version ? version : '1.0';
+		xtao.cli.create(path, version);
+	});
+
+program.command('build')
+	.description('-> Build the demo(Should be run at the root directory of the demo)')
+	.option('-a, --all', 'build all demo files for development, production and publication environment ')
+	.option('-f, --force', 'force building demo.html')
+	.action(function(){
+		var options = arguments[arguments.length - 1]
+			, force
+			, all;
+
+		all = options.all ? true : false;
+		force = options.force ? true : false;
+		xtao.cli.build(all, force);
+	});
+
+
+program.parse(process.argv);
