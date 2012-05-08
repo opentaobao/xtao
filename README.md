@@ -1,6 +1,6 @@
 # xtao
 
-方便TOP组件开发的命令行工具
+方便TOP组件开发的命令行工具。在使用此工具/开发组件前请务必阅读[TOP组件开发规范](top-widget-specification.md)
 
 ## 安装
 
@@ -20,7 +20,7 @@
 ### 构建组件
 	
 	xtao build [options]
-	
+
 	Options
 		-f 强制生成src/demo.html
 
