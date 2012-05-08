@@ -17,10 +17,10 @@
 
 此命令帮助快速建立一个新组件的文件结构以及模板文件。
 
-### Build组件
+### 构建组件
 	
 	xtao build [options]
-
+	
 	Options
 		-f 强制生成src/demo.html
 

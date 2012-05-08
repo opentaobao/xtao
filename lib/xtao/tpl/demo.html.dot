@@ -4,8 +4,8 @@
 		<meta charset="utf-8" />
 		<title>{{=it.title}}</title>
 		<link rel="stylesheet" type="text/css" href="http://a.tbcdn.cn/apps/top/g/css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="http://localhost/top-assets/g/css/prettify.min.css">
-		<link rel="stylesheet" type="text/css" href="http://localhost/top-assets/g/css/racoon.css">
+		<link rel="stylesheet" type="text/css" href="http://a.tbcdn.cn/apps/top/g/css/prettify.min.css">
+		<link rel="stylesheet" type="text/css" href="http://a.tbcdn.cn/apps/top/g/css/racoon.css">
 		<style type="text/css">
 			{{=it.css}}
 		</style>
@@ -53,7 +53,7 @@
 					});
 			})(window);
 		</script>
-		<script type="text/javascript" src="http://localhost/top-assets/g/js/prettify.min.js"></script>
+		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/g/js/prettify.min.js"></script>
 		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/g/js/racoon-min.js"></script>
 		<script type="text/javascript">
 			{{=it.js}}
