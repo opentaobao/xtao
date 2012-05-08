@@ -4,7 +4,7 @@
 
 ## 安装
 
-	npm install xtao
+	npm install -g xtao
 
 ## 使用
 
