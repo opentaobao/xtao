@@ -3,26 +3,61 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>{{=it.title}}</title>
-		<link rel="stylesheet" type="text/css" href="http://a.tbcdn.cn/apps/top/g/css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="http://a.tbcdn.cn/apps/top/g/css/prettify.min.css">
-		<link rel="stylesheet" type="text/css" href="http://a.tbcdn.cn/apps/top/g/css/racoon.css">
+		<link rel="stylesheet" type="text/css" href="http://a.tbcdn.cn/apps/top/xa/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="http://a.tbcdn.cn/apps/top/xa/css/xtao.css">
 		<style type="text/css">
 			{{=it.css}}
 		</style>
 	</head>
 	<body>
-		<div id="page" class="sdk-demo full-height">
-			<div class="row-fluid full-height">
-				<div class="span12 full-height">
-					{{=it.html}}
+		<div class="main-app-container">
+			<div class="main-left-panel">
+				<div class="left-bar">
+					<div class="left-bar-logo">
+						<a href="http://xtao.aliapp.com/index.php" class="left-bar-logo-link">组件展示首页</a>
+					</div>
+				</div>
+			</div>
+			<div class="main-content">
+				<div class="top-bar">
+					<div class="top-bar-sort-items-menu">
+						{{=it.title}}
+					</div>
+					<div class="top-bar-right-panel">
+						<a href="#">我是组件配置页面的链接</a>
+					</div>
+				</div>
+				<div class="top-content">
+					<div class="top-config">
+						<div class="content">
+							{{=it.form}}
+						</div>
+						<h3>获取代码</h3>
+						<div class="content code-wrap">
+							<div class="code-box">
+								<h4>1. 在HEAD头部引入sdk.js核心代码</h4>
+								<textarea class="code">&lt;script src="http://a.tbcdn.cn/apps/top/x/sdk.js"&gt;&lt;/script&gt;</textarea>	
+							</div>
+							<div class="code-box">
+								<h4>2. 组件初始化</h4>
+								<textarea class="code" id="widget-code">
+								</textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="top-preview">
+					<h3>效果预览：</h3>
+					<div class="content">
+						{{=it.preivew}}
+					</div>
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/g/js/jquery.min.js"></script>
-		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/g/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/g/js/2.5.3-crypto-md5-hmac.js"></script>
-		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/g/js/2.5.3-crypto-sha1-hmac.js"></script>
-		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/g/js/2.5.3-crypto-sha256-hmac.js"></script>
+		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/jquery.js"></script>
+		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/2.5.3-crypto-md5-hmac.js"></script>
+		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/2.5.3-crypto-sha1-hmac.js"></script>
+		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/2.5.3-crypto-sha256-hmac.js"></script>
 		<script type="text/javascript" src="{{=it.sdkUrl}}"></script>
 		<script type="text/javascript">
 			;(function(win, undefined){

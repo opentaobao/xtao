@@ -9,14 +9,17 @@ var program = require('commander')
 program.command('create')
 	.description('-> Create a widget based on top sdk')
 	.option('-v, --version [version]', 'specify the version(default: 1.0)')
+	.option('-f, --iframe', 'need iframe')
 	.action(function(){
 		var options = arguments[arguments.length-1]
 			, path = program.args.shift()
-			, version = options.version;
+			, version = options.version
+			, hasIframe = options.iframe;
 		
 		path = 'string' === typeof path ? path : '.';
 		version = 'string' ===  typeof version ? version : '1.0';
-		xtao.cli.create(path, version);
+		hasIframe = 'boolean' === typeof hasIframe ? hasIframe : false;
+		xtao.cli.create(path, version, hasIframe);
 	});
 
 program.command('build')
