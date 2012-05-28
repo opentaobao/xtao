@@ -1,5 +1,0 @@
-<form class="form-horizontal" id="config-form" autocomplete="off">
-	<fieldset>
-		{{=it.options}}
-	</fieldset>
-</form>

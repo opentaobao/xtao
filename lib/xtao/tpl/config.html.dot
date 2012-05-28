@@ -1,0 +1,9 @@
+<form class="form-horizontal" id="config-form" autocomplete="off">
+	<textarea class="hide" id="cfg">{{=it.cfg}}</textarea>
+	<fieldset>
+		{{=it.options}}
+		<div class="form-actions">
+			<button class="btn btn-info" type="submit" id="preview">预览</button>
+		</div>
+	</fieldset>
+</form>
