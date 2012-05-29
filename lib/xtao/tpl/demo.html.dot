@@ -89,6 +89,7 @@
 			})(window);
 		</script>
 		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/xtao.js"></script>
+		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/tree.js"></script>
 		<script type="text/javascript">
 			{{=it.js}}
 		</script>

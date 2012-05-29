@@ -13,7 +13,8 @@
 	xtao create widgetname [options]
 
 	Options
-		-v version 指定版本号（默认为1.0）
+		-v(--version) version 指定版本号（默认为1.0）
+		-f(--iframe) 生成iframe模板文件
 
 此命令帮助快速建立一个新组件的文件结构以及模板文件。
 
@@ -22,7 +23,8 @@
 	xtao build [options]
 
 	Options
-		-f 强制生成src/demo.html
+		-f 强制生成src/config.html
+		-a 生成用于最终发布的demo/demo.html
 
 此命令帮助自动根据config.json生成demo页面。
 
