@@ -21,9 +21,22 @@
 	widgetname
 		|
 		|--version(默认1.0)
-		|    |
-		|    |--assets  <--该目录下存放组件所需资源文件
-		|    |--assets  
+		     |
+		     |--assets  								<--该目录下存放组件所需资源文件
+		     |	  |  
+		     |	  |--widgetname.css  		<--组件样式文件  
+		     |  
+		     |--demo  
+		     |	  |  
+		     |	  |--src  							<--个性化的设置可以修改该目录下对应文件
+		     |	  	  |
+		     |	  	  |--config.html    <--demo的配置部分
+		     |	  	  |--preview.html   <--demo的预览部分
+		     |	  	  |--demo.css  		  <--demo的样式文件
+		     |	  	  |--demo.js  		  <--demo的脚本文件
+		     |
+		     |--widgetname.js 					<--组件脚本文件
+		     |--config.json							<--组件参数配置文件
 
 ### 构建组件
 	
