@@ -58,14 +58,14 @@
 		     |	  |  
 		     |	  |--src                
 		     |	  |	  |
-		     |	  |	  |--config.html     <--根据config.json自动生成（需-f或者初次）
+		     |	  |	  |--config.html      <--根据config.json自动生成（需-f或者初次）
 		     |	  |	  |--preview.html   
 		     |	  |	  |--demo.css       
 		     |	  |	  |--demo.js        
 		     |	  |	          
 		     |	  |--demo-dev.html        <--自动生成的用于daily测试的demo	          
 		     |	  |--demo-pro.html        <--自动生成的用于预发测试的demo	          
-		     |	  |--demo.html  	        <--自动生成的用于最终发布的demo（需-a参数）  
+		     |	  |--demo.html            <--自动生成的用于最终发布的demo（需-a参数）  
 		     |	  	          
 		     |	  	          
 		     |--widgetname.js           
