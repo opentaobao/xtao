@@ -47,6 +47,7 @@
 		-a(--all) 生成用于最终发布的demo/demo.html
 
 此命令帮助自动根据config.json生成demo页面，如下所示：
+
 	...
 		     |
 		     |--assets                  
