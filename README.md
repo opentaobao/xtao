@@ -77,8 +77,28 @@ demo-dev.html、demo-pro.html以及demo.html生成规则除了appkey和sign的�
 	<!doctype html>
 	<html>
 		<head>
+			<meta charset="utf-8" />
+			全局样式文件
+			<style type="text/css">
+				src/demo.css的内容
+			</style>
 		</head>
 		<body>
+			<div class="main-app-container">
+				...
+				<div class="top-config">
+					src/config.html的内容
+				</div>
+				<div class="top-preview">
+					src/preview.html的内容
+				</div>
+				...
+			</div>
+
+			全局脚本文件（包括将签名写cookie的脚本）
+			<script>
+				src/demo.js的内容
+			</script>
 		</body>
 	</html>
 
