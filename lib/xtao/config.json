@@ -4,7 +4,7 @@
 	, "secret": "0c2e3ad8483eb46b78a16dec18d0b7dc13"
 	, "hostname": "xtao.aliapp.com"
 	, "sdkUrl": "../../../../jssdk/trunk/build/sdk-dev.js"
-	, "channelUrl": "/jssdk/trunk/build/channel-dev.html"
+	, "channelUrl": "http://www.ui.com/assets/channel-dev.html"
 	}
 
 , "development": {
@@ -12,7 +12,7 @@
 	, "secret": "35023170595308229031d16c1e8b59eb"
 	, "hostname": "www.mashupshow.com"
 	, "sdkUrl": "../../../../jssdk/trunk/build/sdk-dev.js"
-	, "channelUrl": "/jssdk/trunk/build/channel-dev.html"
+	, "channelUrl": "http://www.ui.com/assets/channel-dev.html"
 	}
 
 , "production": {
@@ -20,7 +20,7 @@
 	, "secret": "8005a1c8effc6eee1c3355ea8201bf65"
 	, "hostname": "xtao.aliapp.com"
 	, "sdkUrl": "http://a.tbcdn.cn/apps/top/x/sdk.js"
-	, "channelUrl": "/jssdk/trunk/build/channel.html"
+	, "channelUrl": "http://www.ui.com/assets/channel.html"
 	}
 
 , "publication": {
