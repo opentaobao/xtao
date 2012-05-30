@@ -1,40 +1,9 @@
-<div class="page-header">
-	<h1 class="demo-title">
-		{{=it.title}}
-		<small>{{=it.description}}</small>
-	</h1>
-</div>
-<div class="row-fluid full-height page-content">
-	<div class="span6 config separator full-height">
-		<textarea id="cfg" class="hide">{{=it.cfg}}</textarea>
-		<h3>配置项：</h3>
-		<div class="content">
-			<form class="form-horizontal" id="config-form">
-				<fieldset>
-					{{=it.options}}
-				</fieldset>
-				<div class="form-actions">
-					<button class="btn btn-info" id="preview">预览</button>
-				</div>
-			</form>
+<form class="form-horizontal" id="config-form" autocomplete="off">
+	<textarea class="hide" id="cfg">{{=it.cfg}}</textarea>
+	<fieldset>
+		{{=it.options}}
+		<div class="form-actions">
+			<button class="btn btn-info" type="submit" id="preview">预览</button>
 		</div>
-		<h3>获取代码：</h3>
-		<div class="content">
-			<div class="step">
-				<h4>1. 在HEAD头部引入sdk.js核心代码</h4>
-				<pre class="prettyprint">&lt;script src="http://a.tbcdn.cn/apps/top/x/sdk.js"&gt;&lt;/script&gt;</pre>	
-			</div>
-			<div class="step">
-				<h4>2. 组件初始化</h4>
-				<pre class="prettyprint" id="widget-code">
-				</pre>
-			</div>
-		</div>
-	</div>
-	<div class="span6 preview full-height">
-		<h3>预览：</h3>
-		<div class="content">
-			<!-- Preview Code Here -->
-		</div>
-	</div>
-</div>
+	</fieldset>
+</form>

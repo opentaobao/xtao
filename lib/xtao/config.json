@@ -1,25 +1,26 @@
 {
 	"development2": {
-		"key": "480970"
-	, "secret": "fbcdffca25976ad4516e767466ad39f6"
+		"key": "487424"
+	, "secret": "0c2e3ad8483eb46b78a16dec18d0b7dc13"
 	, "hostname": "xtao.aliapp.com"
-	, "sdkUrl": "../../../../jssdk/trunk/demo/sdk.js"
-	, "channelUrl": "/jssdk/trunk/demo/channel.html"
+	, "sdkUrl": "../../../../jssdk/trunk/build/sdk-dev.js"
+	, "channelUrl": "http://www.ui.com/assets/channel-dev.html"
 	}
+
 , "development": {
 		"key": "470834"
 	, "secret": "35023170595308229031d16c1e8b59eb"
 	, "hostname": "www.mashupshow.com"
-	, "sdkUrl": "../../../../jssdk/trunk/demo/sdk.js"
-	, "channelUrl": "/jssdk/trunk/demo/channel.html"
+	, "sdkUrl": "../../../../jssdk/trunk/build/sdk-dev.js"
+	, "channelUrl": "http://www.ui.com/assets/channel-dev.html"
 	}
 
 , "production": {
 		"key": "12008678"
 	, "secret": "8005a1c8effc6eee1c3355ea8201bf65"
 	, "hostname": "xtao.aliapp.com"
-	, "sdkUrl": "../../../../jssdk/trunk/build/sdk.js"
-	, "channelUrl": "/jssdk/trunk/build/channel.html"
+	, "sdkUrl": "http://a.tbcdn.cn/apps/top/x/sdk.js"
+	, "channelUrl": "http://www.ui.com/assets/channel.html"
 	}
 
 , "publication": {
