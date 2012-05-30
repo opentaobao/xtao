@@ -63,13 +63,25 @@
 		     |	  |	  |--demo.css       
 		     |	  |	  |--demo.js        
 		     |	  |	          
-		     |	  |--demo-dev.html        <--自动生成的用于daily测试的demo	          
-		     |	  |--demo-pro.html        <--自动生成的用于预发测试的demo	          
+		     |	  |--demo-dev.html        <--自动生成的用于daily测试的demo(域名：www.mashupshow.com)	          
+		     |	  |--demo-pro.html        <--自动生成的用于预发测试的demo(域名：xtao.aliapp.com)	          
 		     |	  |--demo.html            <--自动生成的用于最终发布的demo（需-a参数）  
-		     |	  	          
 		     |	  	          
 		     |--widgetname.js           
 		     |--config.json             
+
+demo-dev.html、demo-pro.html以及demo.html生成规则除了appkey和sign的注入不同，其他都一样。
+
+原理就是将src/下的文件套上模板文件后输出，模板文件示意图如下所示：
+
+	<!doctype html>
+	<html>
+		<head>
+		</head>
+		<body>
+		</body>
+	</html>
+
 
 
 
