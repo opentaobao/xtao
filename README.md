@@ -43,8 +43,32 @@
 	xtao build [options]
 
 	Options
-		-f(--force) 强制生成src/config.html
+		-f(--force) 强制根据config.json生成src/config.html（默认只在第一次时候生成）
 		-a(--all) 生成用于最终发布的demo/demo.html
 
-此命令帮助自动根据config.json生成demo页面。
+此命令帮助自动根据config.json生成demo页面，如下所示：
+	...
+		     |
+		     |--assets                  
+		     |	  |  
+		     |	  |--widgetname.css     
+		     |  
+		     |--demo  
+		     |	  |  
+		     |	  |--src                
+		     |	  |	  |
+		     |	  |	  |--config.html     <--根据config.json自动生成（需-f或者初次）
+		     |	  |	  |--preview.html   
+		     |	  |	  |--demo.css       
+		     |	  |	  |--demo.js        
+		     |	  |	          
+		     |	  |--demo-dev.html        <--自动生成的用于daily测试的demo	          
+		     |	  |--demo-pro.html        <--自动生成的用于预发测试的demo	          
+		     |	  |--demo.html  	        <--自动生成的用于最终发布的demo（需-a参数）  
+		     |	  	          
+		     |	  	          
+		     |--widgetname.js           
+		     |--config.json             
+
+
 
