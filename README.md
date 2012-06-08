@@ -40,7 +40,7 @@
 
 ### 构建组件
 	
-	xtao build [options]
+	xtao build [options] //此命令必须到widgetname/version 目录下运行
 
 	Options
 		-f(--force) 强制根据config.json生成src/config.html（默认只在第一次时候生成）
