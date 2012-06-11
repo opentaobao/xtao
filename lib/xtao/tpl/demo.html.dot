@@ -8,6 +8,39 @@
 		<style type="text/css">
 			{{=it.css}}
 		</style>
+		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/2.5.3-crypto-md5-hmac.js"></script>
+		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/2.5.3-crypto-sha1-hmac.js"></script>
+		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/2.5.3-crypto-sha256-hmac.js"></script>
+		<script type="text/javascript" src="{{=it.sdkUrl}}"></script>
+		<script type="text/javascript">
+			;(function(win, undefined){
+				var appKey = '{{=it.key}}'
+					, appSecret = '{{=it.secret}}'
+					, appHostname = '{{=it.hostname}}'
+					, channelUrl = '{{=it.channelUrl}}'
+					, doc = win.document
+					, timestamp = new Date().getTime()
+					, message = [
+												appSecret
+											, 'app_key'
+											, appKey
+											, 'timestamp'
+											, timestamp
+											, appSecret
+											].join('')
+					, hmac = Crypto.HMAC(Crypto.MD5, message, appSecret).toUpperCase();
+
+					document.cookie = 'timestamp=' + timestamp;
+					document.cookie = 'sign=' + hmac;
+
+					//init
+					TOP.init({
+						appKey: appKey
+					, status: false
+					, channelUrl: window.location.protocol + "//" + window.location.hostname + channelUrl
+					});
+			})(window);
+		</script>
 	</head>
 	<body>
 		<div class="main-app-container">
@@ -55,39 +88,6 @@
 			</div>
 		</div>
 		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/jquery.js"></script>
-		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/2.5.3-crypto-md5-hmac.js"></script>
-		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/2.5.3-crypto-sha1-hmac.js"></script>
-		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/2.5.3-crypto-sha256-hmac.js"></script>
-		<script type="text/javascript" src="{{=it.sdkUrl}}"></script>
-		<script type="text/javascript">
-			;(function(win, undefined){
-				var appKey = '{{=it.key}}'
-					, appSecret = '{{=it.secret}}'
-					, appHostname = '{{=it.hostname}}'
-					, channelUrl = '{{=it.channelUrl}}'
-					, doc = win.document
-					, timestamp = new Date().getTime()
-					, message = [
-												appSecret
-											, 'app_key'
-											, appKey
-											, 'timestamp'
-											, timestamp
-											, appSecret
-											].join('')
-					, hmac = Crypto.HMAC(Crypto.MD5, message, appSecret).toUpperCase();
-
-					document.cookie = 'timestamp=' + timestamp;
-					document.cookie = 'sign=' + hmac;
-
-					//init
-					TOP.init({
-						appKey: appKey
-					, status: false
-					, channelUrl: window.location.protocol + "//" + window.location.hostname + channelUrl
-					});
-			})(window);
-		</script>
 		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/xtao.js"></script>
 		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/tree.js"></script>
 		<script type="text/javascript">
