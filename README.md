@@ -52,9 +52,9 @@
         "options": {                            // 配置项
             "container": {                      // 配置项的key
                 "type": "String",               // 配置项的类型[String|Selection|Boolean]
-                "label": "组件容器",           // 配置项显示名称
+                "label": "组件容器",             // 配置项显示名称
                 "default": ".top-widgetname-container",  // 默认值
-                "tips": "组件容器的选择器",  // 配置项帮助信息
+                "tips": "组件容器的选择器",        // 配置项帮助信息
                 "required": true,               // 配置项是否必填
                 "group": "basic"                // 配置项所在分组
             },
