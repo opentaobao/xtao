@@ -38,6 +38,58 @@
 		     |--widgetname.js           <--组件脚本文件
 		     |--config.json             <--组件参数配置文件
 
+#### config.json说明
+
+	{
+	    "name": "widgetname", 					// 组件名称
+	    "description": "Widget Description",	// 组件描述
+	    "ui": {
+	        "groups": [							// 配置项分组
+	            {"key": "basic", "label": "Basic Settings"},
+	            {"key": "advanced", "label": "Advanced Settings"}
+	        ]
+	    },
+	    "options": {							// 配置项
+	        "container": {						// 配置项的key
+	            "type": "String",				// 配置项的类型[String|Selection|Boolean]
+	            "label": "组件容器",				// 配置项显示名称
+	            "default": ".top-widgetname-container",  // 默认值
+	            "tips": "组件容器的选择器",		// 配置项帮助信息
+	            "required": true,				// 配置项是否必填
+	            "group": "basic"				// 配置项所在分组
+	        },
+	        "name": {
+	            "type": "String",
+	            "label": "姓名",
+	            "default": "Goddy Zhao",
+	            "tips": "填写姓名",
+	            "required": true,
+	            "group": "basic"
+	        },
+	        "education": {
+	            "type": "Selection",
+	            "label": "学历",
+	            "default": "bachelor",
+	            "values": [						// Selection类型的值选项
+	                {"key": "bachelor", "label": "本科"},
+	                {"key": "master", "label": "硕士"},
+	                {"key": "doctor", "label": "博士"},
+	                {"key": "god", "label": "圣斗士"}
+	            ],
+	            "required": true,
+	            "group": "basic"
+	        },
+	        "isF2E": {
+	            "type": "Boolean",
+	            "label": "是否前端",
+	            "default": false,
+	            "description": "是",				// Boolean类型的描述
+	            "required": true,
+	            "group": "basic"
+	        }
+	    }
+	}
+
 ### 构建组件
 	
 	xtao build [options] //此命令必须到widgetname/version 目录下运行
