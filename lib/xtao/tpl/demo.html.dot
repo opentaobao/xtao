@@ -14,31 +14,31 @@
 		<script type="text/javascript" src="{{=it.sdkUrl}}"></script>
 		<script type="text/javascript">
 			;(function(win, undefined){
-				var appKey = '{{=it.key}}'
-					, appSecret = '{{=it.secret}}'
-					, appHostname = '{{=it.hostname}}'
-					, channelUrl = '{{=it.channelUrl}}'
-					, doc = win.document
-					, timestamp = new Date().getTime()
-					, message = [
-												appSecret
-											, 'app_key'
-											, appKey
-											, 'timestamp'
-											, timestamp
-											, appSecret
-											].join('')
-					, hmac = Crypto.HMAC(Crypto.MD5, message, appSecret).toUpperCase();
+				var appKey = '{{=it.key}}';
+				var appSecret = '{{=it.secret}}';
+				var appHostname = '{{=it.hostname}}';
+				var channelUrl = '{{=it.channelUrl}}';
+				var doc = win.document;
+				var timestamp = new Date().getTime();
+				var message = [
+								appSecret,
+								'app_key',
+								appKey,
+								'timestamp',
+								timestamp,
+								appSecret
+				].join('');
+				var hmac = Crypto.HMAC(Crypto.MD5, message, appSecret).toUpperCase();
 
-					document.cookie = 'timestamp=' + timestamp;
-					document.cookie = 'sign=' + hmac;
+				document.cookie = 'timestamp=' + timestamp;
+				document.cookie = 'sign=' + hmac;
 
 					//init
-					TOP.init({
-						appKey: appKey
-					, status: false
-					, channelUrl: window.location.protocol + "//" + window.location.hostname + channelUrl
-					});
+				TOP.init({
+					appKey: appKey,
+					status: false,
+					channelUrl: window.location.protocol + "//" + window.location.hostname + channelUrl
+				});
 			})(window);
 		</script>
 	</head>
