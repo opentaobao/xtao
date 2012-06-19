@@ -2,7 +2,7 @@
   "author": "goddyzhao <goddy128@gmail.com> (http://goddyzhao.me)",
   "name": "xtao",
   "description": "Widget demo builder for top jssdk",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "repository": {
     "type": "git",
     "url": "git://github.com/opentaobao/xtao.git"
