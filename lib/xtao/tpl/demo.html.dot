@@ -43,53 +43,67 @@
 		</script>
 	</head>
 	<body>
-		<div class="main-app-container">
-			<div class="main-left-panel">
-				<div class="left-bar">
-					<div class="left-bar-logo">
-						<a href="http://xtao.aliapp.com/index.php" class="left-bar-logo-link">组件展示首页</a>
-					</div>
-				</div>
-			</div>
-			<div class="main-content">
-				<div class="top-bar">
-					<div class="top-bar-sort-items-menu">
-						{{=it.title}}
-					</div>
-					<div class="top-bar-right-panel">
-						<a href="#">我是组件配置页面的链接</a>
-					</div>
-				</div>
-				<div class="top-content">
-					<div class="top-config">
-						<div class="content">
-							{{=it.config}}
-						</div>
-						<h3>获取代码</h3>
-						<div class="content code-wrap">
-							<div class="code-box">
-								<h4>1. 在HEAD头部引入sdk.js核心代码</h4>
-								<textarea class="code" >&lt;script src="http://a.tbcdn.cn/apps/top/x/sdk.js"&gt;&lt;/script&gt;</textarea>	
+		<div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="http://xtao.aliapp.com/">淘宝开放平台</a>
+                    <label class="brand-sub">JSSDK &amp; 组件开发中心</label>
+                    <div class="nav-collapse">
+                        <ul class="nav pull-right">
+                            <li class="active"><a href="http://xtao.aliapp.com/">组件演示</a></li>
+                            <li><a href="http://xtao.aliapp.com/api/index.html">JSSDK API 文档</a></li>
+                            <li><a href="http://xtao.aliapp.com/design/build/html/ui.html">组件开发规范 &amp; 工具</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content" class="main-app-container">
+            <div class="container-fluid">
+                <div class="row-fluid frame">
+                    <div class="span3 widgets-nav-box">
+                        <div class="well tree-container">
+                            <h3 class="title">组件演示</h3>
+                        </div>
+                    </div>
+                    <div class="span9 right">
+                    	<div class="top-content">
+                    		<div class="top-config">
+                    			<div class="content">
+                    				<h3>配置项：</h3>
+                    				{{=it.config}}
+                    			</div>
+                    			<h3>获取代码</h3>
+								<div class="content code-wrap">
+									<div class="code-box">
+										<h4>1. 在HEAD头部引入sdk.js核心代码</h4>
+										<textarea class="code" >&lt;script src="http://a.tbcdn.cn/apps/top/x/sdk.js"&gt;&lt;/script&gt;</textarea>	
+									</div>
+									<div class="code-box">
+										<h4>2. 组件初始化</h4>
+										<textarea class="code" id="widget-code">
+										</textarea>
+									</div>
+								</div>
+                    		</div>
+                    		<div class="top-preview">
+								<h3>效果预览：</h3>
+								<div class="content">
+									{{=it.preview}}
+								</div>
 							</div>
-							<div class="code-box">
-								<h4>2. 组件初始化</h4>
-								<textarea class="code" id="widget-code">
-								</textarea>
-							</div>
-						</div>
-					</div>
-					<div class="top-preview">
-						<h3>效果预览：</h3>
-						<div class="content">
-							{{=it.preview}}
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/jquery.js"></script>
 		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/xtao.js"></script>
 		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/tree.js"></script>
+		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/application.js"></script>
+
 		<script type="text/javascript">
 			{{=it.js}}
 		</script>
