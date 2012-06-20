@@ -11,7 +11,6 @@
 		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/2.5.3-crypto-md5-hmac.js"></script>
 		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/2.5.3-crypto-sha1-hmac.js"></script>
 		<script type="text/javascript" src="http://a.tbcdn.cn/apps/top/xa/js/2.5.3-crypto-sha256-hmac.js"></script>
-		<script type="text/javascript" src="{{=it.sdkUrl}}"></script>
 		<script type="text/javascript">
 			;(function(win, undefined){
 				var appKey = '{{=it.key}}';
@@ -33,14 +32,24 @@
 				document.cookie = 'timestamp=' + timestamp;
 				document.cookie = 'sign=' + hmac;
 
-					//init
-				TOP.init({
-					appKey: appKey,
-					status: false,
-					channelUrl: window.location.protocol + "//" + window.location.hostname + channelUrl
-				});
 			})(window);
 		</script>
+        <script type="text/javascript" src="{{=it.sdkUrl}}"></script>
+        <script type="text/javascript">
+            ;(function(win, undefined){
+                var appKey = '{{=it.key}}';
+                var appSecret = '{{=it.secret}}';
+                var appHostname = '{{=it.hostname}}';
+                var channelUrl = '{{=it.channelUrl}}';
+
+                //init
+                TOP.init({
+                    appKey: appKey,
+                    status: false,
+                    channelUrl: window.location.protocol + "//" + window.location.hostname + channelUrl
+                });
+            })(window);
+        </script>
 	</head>
 	<body>
 		<div class="navbar navbar-fixed-top">
