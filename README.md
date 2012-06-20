@@ -41,7 +41,8 @@
 #### config.json说明
 
     {
-        "name": "widgetname",                   // 组件名称
+        "name": "widgetname",                   // 组件名称（如：login-btn）
+        "label": "widgetname",                   // 组件显示名字（如：淘宝登录组件）
         "description": "Widget Description",    // 组件描述
         "ui": {
             "groups": [                         // 配置项分组
