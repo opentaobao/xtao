@@ -1,5 +1,8 @@
 {
   "author": "goddyzhao <goddy128@gmail.com> (http://goddyzhao.me)",
+  "contributors": [
+    "yuxia <yuxia@gmail.com> (http://yuxia.com)"
+  ],
   "name": "xtao",
   "description": "Widget demo builder for top jssdk",
   "version": "0.0.7",
